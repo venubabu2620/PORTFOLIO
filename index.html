@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venubabu Mallampu | Data Analyst Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Alpine -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Particles -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-gray-950 text-gray-200">
+
+<!-- NAV -->
+<header class="fixed w-full bg-gray-950/80 backdrop-blur z-50">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-xl font-bold text-blue-400">VM</h1>
+    <div class="space-x-6 hidden md:flex">
+      <a href="#about">About</a>
+      <a href="#impact">Impact</a>
+      <a href="#projects">Case Studies</a>
+      <a href="#dashboard">Dashboards</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="h-screen flex items-center justify-center text-center relative">
+  <div id="particles-js" class="absolute inset-0"></div>
+
+  <div class="relative z-10 px-6">
+    <h1 class="text-5xl font-bold mb-4">
+      Turning Data into Decisions that Drive Business Growth
+    </h1>
+    <p class="text-xl text-blue-400 mb-6">
+      Venubabu Mallampu — Data Analyst
+    </p>
+    <p class="max-w-2xl mx-auto text-gray-400 mb-8">
+      I help businesses uncover insights, optimize performance, and make smarter decisions using data analytics, dashboards, and predictive models.
+    </p>
+
+    <a href="#projects" class="bg-blue-500 px-6 py-3 rounded-lg hover:bg-blue-600">
+      Explore My Work
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-5xl mx-auto py-20 px-6">
+  <h2 class="text-3xl font-bold text-blue-400 mb-6">What I Do</h2>
+  <p class="text-gray-400 leading-relaxed">
+    I specialize in transforming raw, complex datasets into clear business insights. With experience in Python, SQL, and Power BI, I build data pipelines, perform deep analysis, and deliver dashboards that directly support decision-making.
+    <br><br>
+    My focus is simple: identify what matters, measure it accurately, and present it in a way that drives action.
+  </p>
+</section>
+
+<!-- KPI IMPACT -->
+<section id="impact" class="bg-gray-900 py-20 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-400 mb-12">Impact Delivered</h2>
+
+    <div class="grid md:grid-cols-4 gap-8" x-data="{counts:[35,25,15,10]}">
+      
+      <div>
+        <h3 class="text-4xl font-bold text-blue-400" x-text="counts[0] + '%'"></h3>
+        <p class="text-gray-400 mt-2">Faster Decision Making</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-blue-400" x-text="counts[1] + '%'"></h3>
+        <p class="text-gray-400 mt-2">Query Optimization</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-blue-400" x-text="counts[2] + '+ hrs'"></h3>
+        <p class="text-gray-400 mt-2">Time Saved Monthly</p>
+      </div>
+
+      <div>
+        <h3 class="text-4xl font-bold text-blue-400" x-text="counts[3] + '+'"></h3>
+        <p class="text-gray-400 mt-2">Dashboards Delivered</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="projects" class="max-w-6xl mx-auto py-20 px-6">
+  <h2 class="text-3xl font-bold text-blue-400 mb-12">Case Studies</h2>
+
+  <div class="space-y-12">
+
+    <!-- CASE -->
+    <div class="bg-gray-900 p-8 rounded-lg">
+      <h3 class="text-xl font-semibold mb-4">Customer Insights & Trends Analysis</h3>
+
+      <p class="text-gray-400 mb-4"><strong>Problem:</strong> Businesses lacked clarity on customer behavior and purchasing trends.</p>
+      <p class="text-gray-400 mb-4"><strong>Approach:</strong> Performed EDA on 3,900+ records using SQL and Python. Cleaned and transformed datasets, then built Power BI dashboards.</p>
+      <p class="text-gray-400 mb-4"><strong>Impact:</strong> Improved decision-making efficiency by 40% and enabled better customer targeting strategies.</p>
+
+      <a href="https://github.com/venubabu2620" target="_blank" class="text-blue-400">View Project →</a>
+    </div>
+
+    <div class="bg-gray-900 p-8 rounded-lg">
+      <h3 class="text-xl font-semibold mb-4">Credit Card Fraud Detection</h3>
+
+      <p class="text-gray-400 mb-4"><strong>Problem:</strong> Detecting fraud in highly imbalanced datasets.</p>
+      <p class="text-gray-400 mb-4"><strong>Approach:</strong> Built ML models (XGBoost, Random Forest) with SMOTE and hyperparameter tuning.</p>
+      <p class="text-gray-400 mb-4"><strong>Impact:</strong> Increased detection performance by 35%.</p>
+
+      <a href="https://github.com/venubabu2620" target="_blank" class="text-blue-400">View Project →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- DASHBOARD EMBED -->
+<section id="dashboard" class="bg-gray-900 py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold text-blue-400 mb-6">Live Dashboard</h2>
+  <p class="text-gray-400 mb-6">Interactive Power BI dashboard demonstrating KPI tracking and insights</p>
+
+  <!-- Replace this with your real Power BI embed link -->
+  <iframe 
+    class="w-full max-w-5xl h-[500px] mx-auto rounded-lg"
+    src="https://app.powerbi.com/view?r=YOUR_EMBED_LINK">
+  </iframe>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-5xl mx-auto py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold text-blue-400 mb-6">Let’s Work Together</h2>
+  <p class="text-gray-400 mb-6">
+    I’m actively looking for Data Analyst roles where I can drive measurable impact through data.
+  </p>
+
+  <div class="space-x-6 text-lg">
+    <a href="mailto:mallampuvenu@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/venubabuanalyst/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/venubabu2620" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</section>
+
+<footer class="text-center py-6 border-t border-gray-800 text-gray-500">
+  © 2026 Venubabu Mallampu
+</footer>
+
+<!-- PARTICLES -->
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    size: { value: 3 },
+    move: { speed: 1 },
+    line_linked: { enable: true }
+  }
+});
+</script>
+
+</body>
+</html>
